@@ -12,7 +12,7 @@
     --negro: #000000;
     --azul: #151A41;
     --rosa: #FF0099;
-    --gris-claro: rgb(245, 245, 245, 0.5);
+    --gris-claro: rgba(128, 128, 128, 0.4);
     --box-shadow-gris: 0 15px 50px -20px #0000007a;
 }
 
@@ -31,10 +31,33 @@ main, .pop-up {
 }
 
 .pop-up {
+    position: relative;
     width: 300px;
     height: 325px;
     background: var(--blanco);
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: var(--box-shadow-gris);
+}
+
+.pop-up__button-x {
+    position: absolute;
+    top: .7rem;
+    right: .9rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--gris-claro);
+    background: var(--blanco);
+    border: 1px solid var(--gris-claro);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.pop-up p {
+    font-size: .9rem;
+    font-weight: 700;
+    text-align: center;
 }
