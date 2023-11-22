@@ -49,12 +49,16 @@ main, .pop-up {
     height: 1.6rem;
     font-size: 1rem;
     font-weight: 300;
-    color: var(--gris-claro);
+    color: rgba(128, 128, 128, 0.7);
     background: var(--blanco);
     border: 1px solid var(--gris-claro);
     border-radius: 50%;
     cursor: pointer;
+}
 
+.pop-up__button-x:active {
+    color: var(--rosa);
+    border: 1px solid transparent;
 }
 
 .pop-up p {
