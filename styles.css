@@ -61,3 +61,21 @@ main, .pop-up {
     font-weight: 700;
     text-align: center;
 }
+
+.pop-up__numbers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+
+.pop-up__button-numbers {
+    font-weight: 700;
+    font-size: .9rem;
+    padding: .5rem .9rem;
+    border: 1px solid var(--gris-claro);
+    border-radius: .2rem;
+    background: var(--blanco);
+}
+
