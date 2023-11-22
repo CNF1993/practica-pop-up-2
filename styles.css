@@ -1,1 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --azul: #151A41;
+    --rosa: #FF0099;
+    --gris-claro: rgb(245, 245, 245, 0.5);
+    --box-shadow-gris: 0 15px 50px -20px #0000007a;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(245, 245, 245);
+    gap: .5rem;
+}
+
+main, .pop-up {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pop-up {
+    width: 300px;
+    height: 325px;
+    background: var(--blanco);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow-gris);
+}
