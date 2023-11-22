@@ -97,3 +97,21 @@ main, .pop-up {
     border: 1px solid var(--rosa);
 }
 
+.pop-up__satisfaccion {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 .9rem;
+}
+
+.pop-up__satisfaccion p {
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+.pop-up__satisfaccion p:first-of-type {
+    text-align: left;
+}
+
+.pop-up__satisfaccion p:nth-of-type(2) {
+    text-align: right;
+}
