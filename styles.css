@@ -12,8 +12,9 @@
     --negro: #000000;
     --azul: #151A41;
     --rosa: #FF0099;
-    --gris-claro: rgba(128, 128, 128, 0.4);
+    --gris-claro: rgba(128, 128, 128, 0.1);
     --box-shadow-gris: 0 15px 50px -20px #0000007a;
+    --box-shadow-negro: 0 10px 18px -12px #000000;
 }
 
 main {
@@ -77,5 +78,18 @@ main, .pop-up {
     border: 1px solid var(--gris-claro);
     border-radius: .2rem;
     background: var(--blanco);
+    cursor: pointer;
+}
+
+.pop-up__button-numbers:hover, .pop-up__button-numbers:focus {
+    border: 1px solid var(--rosa);
+    background: var(--rosa);
+    color: var(--blanco);
+    box-shadow: var(--box-shadow-negro);
+}
+
+.pop-up__button-numbers:active {
+    transform: scale(.9);
+    border: 1px solid var(--rosa);
 }
 
