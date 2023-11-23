@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    /* letter-spacing: .1px; */
 }
 
 :root {
@@ -120,8 +121,11 @@ main, .pop-up {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.7);
 }
+
+/* hr {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+} */
 
 input[type="checkbox"] {
     margin: 2rem .5rem;
@@ -129,6 +133,20 @@ input[type="checkbox"] {
 
 label, input[type="checkbox"] {
     cursor: pointer;
+}
+
+.pop-up__button-next {
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 1rem 5rem;
+    background: var(--blanco);
+    border: 1px solid var(--gris-claro);
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.pop-up__button-next:active {
+    transform: scale(.95);
 }
 
 
