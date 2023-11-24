@@ -15,7 +15,7 @@
     --negro: #000000;
     --azul: #151A41;
     --rosa: #FF0099;
-    --gris-claro: rgba(128, 128, 128, 0.1);
+    --gris-claro: rgba(128, 128, 128, 0.25);
     --box-shadow-gris: 0 15px 50px -20px #0000007a;
     --box-shadow-negro: 0 10px 18px -12px #000000;
 }
@@ -40,7 +40,7 @@ main, .pop-up {
     height: 325px;
     background: var(--blanco);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     box-shadow: var(--box-shadow-gris);
 }
 
@@ -76,6 +76,7 @@ main, .pop-up {
     justify-content: center;
     align-items: center;
     gap: .2rem;
+    padding-top: 1rem;
 }
 
 .pop-up__button-numbers {
@@ -123,14 +124,13 @@ main, .pop-up {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid var(--gris-claro);
+    margin-bottom: .6rem;
+    padding: 0 1.5rem;
 }
 
-/* hr {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.7);
-} */
-
 input[type="checkbox"] {
-    margin: 2rem .5rem;
+    margin: 1.2rem .5rem;
 }
 
 label, input[type="checkbox"] {
@@ -140,11 +140,17 @@ label, input[type="checkbox"] {
 .pop-up__button-next {
     font-size: .8rem;
     font-weight: 500;
-    padding: 1rem 5rem;
+    padding: 1rem 4.5rem;
     background: var(--blanco);
     border: 1px solid var(--gris-claro);
     border-radius: 0.2rem;
     cursor: pointer;
+}
+
+.pop-up__button-next:hover {
+    background: var(--rosa);
+    color: var(--blanco);
+    box-shadow: var(--box-shadow-negro);
 }
 
 .pop-up__button-next:active {
