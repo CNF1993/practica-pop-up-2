@@ -61,7 +61,7 @@ main, .pop-up {
 
 .pop-up__button-x:active {
     color: var(--rosa);
-    border: 1px solid transparent;
+    border: 1px solid var(--rosa);
 }
 
 .pop-up p {
